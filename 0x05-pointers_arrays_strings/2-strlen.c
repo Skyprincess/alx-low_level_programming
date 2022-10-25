@@ -5,17 +5,19 @@
  *
  *@s: char to check
  *Description: this will return the length of a string
- *Return: 0 is success
+ *Return: length
  */
 
 int _strlen(char *s)
 
 {
-	int a = 0
+	int len = 0;
 
-	for (; *s++;);
-	
-	a++;
-	return (a);
+	while (*s != '\0')
+	{
+		len++;
+		s++;
+	}
+	return (len);
 
 }
